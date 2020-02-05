@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+.App {
+  text-align: center;
+  background-color: #242424;
+  padding-bottom: 300px;
+  max-width: 917px;
+  
+  justify-content: center;
+  margin-left:auto;
+  margin-right:auto;
+  width:917px;
+  overflow-y: 'scroll';
+    
+
+}
+
+.App-sm {
+  text-align: center;
+  background-color: #242424;
+  padding-bottom: 300px;
+  max-width: 917px;
+  
+  justify-content: center;
+  margin-left:auto;
+  margin-right:auto;
+  width:400px;
+  overflow-y: 'scroll';
+    
+
+}
+
+.App-mid{
+  text-align: center;
+  background-color: #242424;
+  padding-bottom: 300px;
+  max-width: 917px;
+  
+  justify-content: center;
+  margin-left:auto;
+  margin-right:auto;
+  width:700px;
+  overflow-y: 'scroll';
+    
+
+}
+
+.App-bg{
+     background-color: #141414;
+    padding-top: 30px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+.App-bg-sm{
+    background-color: #141414;
+    padding-top: 30px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+.App-logo {
+  height: 80px;
+}
+
+.App-header {
+  height: 1000px;
+  padding: 20px;
+  padding-bottom: 60px;
+  font-size:small;
+  color: #898989;
+  text-align: left;
+}
+.App-header-ss {
+  height: 220px;
+  padding: 20px;
+  padding-bottom: 60px;
+  font-size:small;
+  color: #898989;
+  text-align: left;
+}
+
+.App-header-mid {
+  height: 1040px;
+  padding: 20px;
+  padding-bottom: 60px;
+  font-size:small;
+  color: #898989;
+  text-align: left;
+}
+
+.App-intro {
+  font-size: small;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.name{
+    position:relative;
+    font-family: 'Inconsolata', monospace;
+    top:-10px;
+    
+}
+.name-mid{
+    position:relative;
+    font-family: 'Inconsolata', monospace;
+    top:-10px;
+    left:10px;
+    
+}
+.summary{
+    color: #df966c;
+    position:relative;
+    font-family: 'Inconsolata', monospace;
+    top:-10px;
+    
+}
+
+.summary-sm{
+    color: #df966c;
+    position:relative;
+    font-family: 'Inconsolata', monospace;
+    top:-70px;
+    left: 180px;
+    width:380px;
+    
+}
+.urlForm{
+    width:100%;
+    position: relative;
+    align-items: center;
+  justify-content: center;
+    left:12%;
+    top:50%;
+    
+
+}
+.info{
+    font-family: 'Inconsolata', monospace;
+    position:relative;
+    left: 75%;
+    top:-5%;
+    
+}
+.InfoPic{
+    position: relative;
+    top:20px;
+    max-width:25%;
+    height:auto;
+}
+.h3 {
+    font-size: small;
+}
+.content{
+   padding-top: 20px;
+    position: relative;
+    display: inline-flex;
+}
+
+.devspace {
+    padding-left: 12px;
+    margin-left: 20px;
+    
+}
+.Jobs {
+    float:left;    
+    width:70%;
+    
+}
+
+.Job {
+    padding: 12px;
+    margin: 20px;
+    
+}
+.Job-sm {
+    position:relative;
+  
+    padding: 12px;
+    
+}
+.Skills{
+    float: left;
+    width: 30%;
+    background-color: ;
+    
+    
+}
+.SkillPad{
+    margin-top:50px;
+   
+ 
+}
+
+.Skill {
+    margin: 20px;
+    padding-top: 10px;
+    border-left: 2px #6fafd3;
+    
+}
+
+.SecTitle{
+    font-family: 'Inconsolata', monospace;
+    border-bottom: 2px solid #141414;
+    position: absolute;
+    left: -50px;
+    padding-left: 40px;
+    width: 300px;
+    color: #df966c;
+}
+.SkillTitle{
+    font-family: 'Inconsolata', monospace;
+    border-bottom: 2px solid #141414;
+    position: absolute;
+    left: 585px;
+    padding-left: 30px;
+    width: 300px;
+    color:#df966c;
+}
+.SkillTitle-mid{
+    font-family: 'Inconsolata', monospace;
+    border-bottom: 2px solid #141414;
+    position: absolute;
+    left: 475px;
+    padding-left: 30px;
+    width: 300px;
+    color:#df966c;
+}
+
+.shortenertitle{
+    color:#df966c;
+    font-family: 'Inconsolata', monospace;
+}
+
+.Modal{
+   top:25%;
+   left:-1%;
+    height: 500px;
+   color: #898989;
+    text-align: center;
+}
+.modal-background-color{
+   background-color: #242424; 
+   border-radius: 3px;
+    height: 175px;
+}
+
+.modal-noline{
+   border-bottom: 0px;
+}
+.invalidError{
+    color: red;
+    visibility:hidden;
+}
+
+.blue-highlight{
+    color: #6fafd3;
+    position:relative;
+    display: inline-flex;
+}
+.white-highlight{
+    color:#cfd0d0;
+    padding-left: 10px;
+}
+.screentitle{
+    text-align: center;
+    width:75%;
+}
+
+
+li {    
+    list-style-position: inside;
+    text-indent: -1.5em;
+    padding-left: 20px;
+}
+.hexagon-wrapper {
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.hexagon-wrapper {
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.hexagon {
+  height: 100%;
+  width: calc(100% * 0.57735);
+  display: inline-block;
+}
+
+.hexagon:before {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(60deg);
+}
+
+.hexagon:after {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(-60deg);
+}
+
+#hex1 {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  left: 15px;
+  top:-20px;
+    
+}
+#hex2 {
+  width: 55px;
+  height: 55px;
+  position: relative;
+  left: -150px;
+  top: 12px;
+    
+}
+#hex3 {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  left: -220px;
+  top: -82px;
+
+    
+}
+#hex4 {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  left: -160px;
+  top: 10px;
+
+    
+}
+#hex5 {
+   position: relative;
+  width: 30px;
+  height: 30px;
+  left: -270px;
+  top: 20px;
+    
+}
+
+#hex6 {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  left: 320px;
+  top: 100px;
+    
+}
+#hex6-mid {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  left: 90px;
+  
+    
+}
+#hex7 {
+   position: relative;
+  width: 30px;
+  height: 30px;
+  left: 45px;
+  top: -50px;
+    
+}
+
+#hex8 {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  left: -20px;
+  top: 80px;
+    
+}
+#hex9 {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  left: 20px;
+  top: 180px;
+    
+}
+#hex10 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  left: -110px;
+  top: 120px;
+    
+}
+
+#hex11 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  left: -330px;
+  top: 90px;
+    
+}
+
+#hex12 {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  left: 220px;
+  top: 120px;
+    
+}
+#hex13 {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  left: 180px;
+  top: 90px;
+    
+}
+#hex14 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  left: 45px;
+  top: 40px;
+    
+}
+
+
+#color1 {
+  background-color: #141414; 
+    
+}
+
+html, body{
+  
+    background-color: #141414;
+  
+    
+}

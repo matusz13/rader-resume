@@ -1,0 +1,132 @@
+{
+    "jobs":[    {
+                "job_name":"<Professional Sabbatical>" , 
+                "job_title":"Self Employed",
+                "start_date":"2018",
+                "end_date":"current",
+                "responsibilities": [{
+                    "1":"Took time away from the office setting to travel and provide caregiving to an ailing family member.",
+                    "2":"Attained FAA Part 107 drone operator licensing.",
+                    "3":"Traveled to Iceland, Havasu Falls, Zion National Park,The Grand Canyon, White Sands National Monument and witnessed the Marfa Mystery Lights.",
+                    "4":"Climbed a few mountains, slept in a yurt. "
+                }]
+               
+    
+    
+    },
+            {
+                "job_name":"<Cinema Scene Marketing>" , 
+                "job_title":"Senior Software Engineer",
+                "start_date":"2016",
+                "end_date":"2018",
+                "responsibilities": [{
+                    "1":"Development of an enterprise level digital signage system.",
+                    "2":"Digital box office, signage, interactive touch screen displays",
+                    "3":"Utilized bug tracking, documentation and software deployment practices with Jira, Confluence, Slack, Intellij, PyCharm and Brackets."
+                }]
+               
+    
+    
+    },
+            {
+                "job_name":"<The Walt Disney Company>" , 
+                "job_title":"Senior Software Engineer",
+                "start_date":"2011",
+                "end_date":"2015",
+                "responsibilities": [{
+                    "1":"Development of large-scale children’s games and enterprise level content management software.",
+                    "2":"Responsible for Micro transaction implementation, Registration/Account/Management/Purchase flows, Game play updates.",
+                    "3":"Utilized bug tracking, documentation and software deployment practices with Jira, Confluence and Teamsite systems.",
+                    "4":"Used Javascript, Python, Lua, Metaplace, Actionscript, Brackets, Pycharm and Adobe Creative Suite."
+                }]
+               
+    
+    
+    },
+            {
+                "job_name":"<Cisco Systems>" , 
+                "job_title":"Customer Facing Engineer",
+                "start_date":"2009",
+                "end_date":"2011",
+                "responsibilities": [{
+                    "1":"Customization and development of a device based content management and video player platform.",
+                    "2":"Worked on site, in office and remotely with customers to prototype new features and merge them into future development cycles.",
+                    "3":"Developed real time debugging protocols with offsite developers in high-pressure situations.",
+                    "4":"Used Eclipse IDE, and Adobe Creative Suite"
+                }]
+               
+    
+    
+    },
+            {
+                "job_name":"<VML inc>" , 
+                "job_title":"Web Developer",
+                "start_date":"2006",
+                "end_date":"2008",
+                "responsibilities": [{
+                    "1":"Design and development of data-driven websites, video players and interactive content.",
+                    "2":"Analytics implementation across multiple high-end client websites. DrPepper.com, Snapple, Microsoft Forefront, 7up, Xbox, and Ford.",
+                    "3":"Utilized Html, Javascript, Css, Adobe Creative Suite and Omniture Analytics."
+                }]
+               
+    
+    
+    }
+           ],
+    "skills":[
+        {
+                "skill_title":"<Langs + Libs>", 
+                "skill_list": [{
+                    "1":"Javascript ES5-ES10, ReactJS, Lua, CoffeeScript.",
+                    "2":"Node.js NPM, Express, Mongoose, Webpack.",
+                    "3":"Python 3.7, Django.",
+                    "4":"Html5/Css, JSON, XML"
+                }]
+               
+    
+    
+    },
+         {
+                "skill_title":"<Design Practices>", 
+                "skill_list": [{
+                    "1":"Responsive web development, debugging, unit testing, prototyping, data integrations and visualizations",
+                    "2":"RESTful Services, DOM operations, Socket communications"
+                }]
+               
+    
+    
+    },
+         {
+                "skill_title":"<Software>", 
+                "skill_list": [{
+                    "1":"Intellij IDEA, WebStorm, PyCharm, Eclipse based IDE",
+                    "2":"Atlassian Products (Jira, Confluence, Bitbucket, etc.), Slack",
+                    "3":"Adobe Creative Suite",
+                    "4":"Brackets, ReactJS Dev Tools, Fiddler, Wireshark, Postman",
+                    "5":"Firebase, Heroku, MongoDB",
+                    "6":"GIT, GitHub, Homebrew, Yarn"
+                }]
+               
+    
+    
+    }],
+    "info":[
+        {
+                "full_name":"William 'Matt' Rader",
+                "phone":"816-716-7410",
+                "location":"Kansas City",
+                "email":"matusz13@gmail.com",
+                "summary":"Nine years design and development experience, continual learning.",
+                "skills":"Skills",
+                "experience":"Experience",
+                "devspace":"<Dev Space>"
+
+    
+    
+    }]
+     
+        
+    
+
+}
+               

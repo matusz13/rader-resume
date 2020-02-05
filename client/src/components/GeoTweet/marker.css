@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+.hashtagBG{
+    width:fit-content;
+    
+    background-color: #2f3948;
+    height: 100%;
+    top:-80px;
+    position:relative;
+    opacity: .85;
+     font-family: 'Inconsolata', monospace;
+    color: #6fafd3;
+    font-weight: bold;
+    font-size: 20px;
+}
+.marker{
+    position: relative;
+    top:-65px;
+    left:-20px;
+}
