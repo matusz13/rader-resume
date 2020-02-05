@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^1.5.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "config": "^3.2.4",
+    "cookie-parser": "~1.4.4",
+    "debug": "^2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "~2.6.1",
+    "express": "^4.16.4",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.8.6",
+    "morgan": "~1.9.1",
+    "nanoid": "^2.1.9",
+    "nodemon": "^2.0.2",
+    "socket.io": "^2.3.0",
+    "twitter": "^1.7.1",
+    "validation": "0.0.1"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
