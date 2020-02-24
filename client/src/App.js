@@ -96,13 +96,13 @@ render() {
     let scale = this.state.scale;
     
     return (
-    this.state.isLoading ? <LoadingScreen/> : <React.StrictMode>
+    this.state.isLoading ? <LoadingScreen/> : 
        <div>
         {!this.state.matches ? <MidScreen me={me} infoz={infoz} skillz={skillz} jobz={jobz} scale={scale}/>
         
         :<DefaultScreen me={me} infoz={infoz} skillz={skillz} jobz={jobz}/>
         }
-        </div></React.StrictMode>
+        </div>
     )
 }
         
