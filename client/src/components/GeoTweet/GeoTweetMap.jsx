@@ -9,13 +9,13 @@ export const GeoTweetMap = () => {
 const {state, dispatch} = useContext(StateContext);
 
 
-const [data, setData] = useState({ 
+const [data] = useState({ 
     stores: [{lat: 39.04894045, lng: -94.4830034, hashtag:"chiefs", defaultLoc:true},
             {lat: 39.09716052, lng: -94.58001003, hashtag:"kansascity",defaultLoc:false},
             {lat: 39.03091926, lng: -94.5929718, hashtag:"kcmo",defaultLoc:false}
             ]});
     
-const [defaultcoords, setCooords] = useState({
+const [defaultcoords] = useState({
     center: {
       lat: 59.95,
       lng: 30.33
@@ -133,7 +133,7 @@ const mapRef=React.useRef();
     return (
     
        <GoogleMapReact
-          bootstrapURLKeys={{key: process.env.GMAP_API/* YOUR KEY HERE */ }}
+          bootstrapURLKeys={{key: process.env.REACT_APP_GMAP_API/* YOUR KEY HERE */ }}
           defaultCenter={defaultcoords.center}
           defaultZoom={defaultcoords.zoom}
            

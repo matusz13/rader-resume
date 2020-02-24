@@ -1,6 +1,4 @@
-import React, { Component, useState, useEffect, useRef, useContext , useReducer,forwardRef, useImperativeHandle} from 'react';
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect, useContext ,forwardRef, useImperativeHandle} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -12,8 +10,6 @@ import Paper from '@material-ui/core/Paper';
 
 import Typography from '@material-ui/core/Typography';
 import FilledInput from '@material-ui/core/FilledInput';
-import OutlinedInput from '@material-ui/core/OutlinedInput';
-import InputLabel from '@material-ui/core/InputLabel';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import FormControl from '@material-ui/core/FormControl';
 import clsx from 'clsx';
@@ -21,7 +17,6 @@ import axios from 'axios';
 import useDebounce from '../utils/useDebounce';
 import { StateContext } from './GeoTweetScreen';
 
-import update from 'immutability-helper';
 
 
  const useStyles = makeStyles(theme => ({
@@ -67,7 +62,6 @@ export const GeoTweetList = forwardRef((props, ref) => {
 
   
     const [searchTerm, setSearchTerm] = useState('');
-    const [isSearching, setIsSearching] = useState(false);
     const debouncedSearchTerm = useDebounce(searchTerm, 500);
 
      const handleChange = prop => event => {
@@ -81,7 +75,6 @@ export const GeoTweetList = forwardRef((props, ref) => {
     
     function callGeoTweetService(searchterm){
             if (debouncedSearchTerm) {
-        setIsSearching(true);
         const config = {
         method: 'POST',
         url: '/api/geotweet',
@@ -96,11 +89,11 @@ export const GeoTweetList = forwardRef((props, ref) => {
             // handle result
             const body =  response.data;
             //console.log("response body: " +body)
-            if(body.error == 'invalid URL'){
+            if(body.error === 'invalid URL'){
                 setData({
                     error:'invalid url, please try again'});
             }
-            else if(body.error == 'Address not found'){
+            else if(body.error === 'Address not found'){
                 setData({
                     error:'Could not verify url, please try again'});
              }
