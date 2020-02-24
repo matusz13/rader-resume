@@ -4,6 +4,7 @@ import {GeoTweetList} from './GeoTweetList';
 import update from 'immutability-helper';
 
 
+
 export const StateContext = React.createContext();
 let ref = null;
 
