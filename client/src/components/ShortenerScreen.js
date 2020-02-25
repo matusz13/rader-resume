@@ -33,7 +33,7 @@ class ShortenerScreen extends Component {
     if(oldProps.error !== newProps.error){
         
         //two different error handling methods. in-form and modal pop
-        if(this.props.error == "invalid url, please try again"){
+        if(this.props.error === "invalid url, please try again"){
             document.getElementById("invError").style.visibility = "visible";
 
         }else{

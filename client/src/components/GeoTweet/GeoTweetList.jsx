@@ -72,8 +72,28 @@ export const GeoTweetList = forwardRef((props, ref) => {
       };
     
     
-    function callGeoTweetService(searchterm){
-            if (debouncedSearchTerm) {
+    
+     
+    const updateHookBack = (hashtag, lat, lng) => {
+        dispatch({ type: 'UPDATE_LIST', data: {
+            lat: lat,
+            lng: lng,
+            weight: hashtag
+                   
+              },})
+        
+        setSearchTerm(hashtag);
+        //callGeoTweetService(hashtag);
+    }
+    useImperativeHandle(ref,() =>{
+        return {
+            updateHookBack:updateHookBack
+        };
+    });
+    
+     useEffect( () => {
+         
+        if (debouncedSearchTerm) {
         const config = {
         method: 'POST',
         url: '/api/geotweet',
@@ -81,7 +101,7 @@ export const GeoTweetList = forwardRef((props, ref) => {
         headers: {'Content-Type':'application/json',
                  'Accept':'application/json'
                  },
-        data: JSON.stringify({hashtag:searchterm,lng:state.lng,lat:state.lat})
+        data: JSON.stringify({hashtag:debouncedSearchTerm,lng:state.lng,lat:state.lat})
         }
         axios(config)
     .then(response => {
@@ -117,28 +137,8 @@ export const GeoTweetList = forwardRef((props, ref) => {
                 });
         })
       }
-    }
-     
-    const updateHookBack = (hashtag, lat, lng) => {
-        dispatch({ type: 'UPDATE_LIST', data: {
-            lat: lat,
-            lng: lng,
-            weight: hashtag
-                   
-              },})
-        
-        setSearchTerm(hashtag);
-        //callGeoTweetService(hashtag);
-    }
-    useImperativeHandle(ref,() =>{
-        return {
-            updateHookBack:updateHookBack
-        };
-    });
     
-     useEffect( () => {
-    callGeoTweetService(debouncedSearchTerm);
-  }, [debouncedSearchTerm]);
+  }, [debouncedSearchTerm, state.lat, state.lng]);
     
 
     return (

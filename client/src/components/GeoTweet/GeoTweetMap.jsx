@@ -6,7 +6,7 @@ import Marker from './Marker'
 
   
 export const GeoTweetMap = () => {
-const {state, dispatch} = useContext(StateContext);
+const { dispatch} = useContext(StateContext);
 
 
 const [data] = useState({ 

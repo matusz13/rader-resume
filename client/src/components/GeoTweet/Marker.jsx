@@ -14,7 +14,7 @@ useEffect( () => {
     //mrkerTxt.style["left"] = lftStr;
     setLeft(lftStr);
    
-  }, []);
+  }, [id]);
     
 return (
 
