@@ -31,7 +31,7 @@ const mapRef=React.useRef();
         mapRef.current = map;
         //console.log("markerRef length: " +markerRef.current.length)
      
-    //for data flow purposes, I've debated moving this to a separate function to be called from the parent component once it's state updates that this is loaded. I went this route thinking it'd be more efficient, I was also already using the context to pass onclick events from the markers constructed below. 
+    //passing initial location to parent component and on to the twitter list component
     data.stores
     .forEach((store,index) => {
             if(store.defaultLoc){
@@ -71,7 +71,7 @@ const mapRef=React.useRef();
           lng={store.lng}
           text={"#" +store.hashtag}
           onClick={() => {
-            //this is the real reason I'm using context for two way data flow. This dispatch is passed to the parent component reducer, then sent to the list component to update the twitter feed. 
+            //passing to the parent component reducer, then sent to the list component to update the twitter feed. 
             dispatch({ type: 'UPDATE_LOCATION', data: {
                    lat: store.lat,
                    lng: store.lng,
