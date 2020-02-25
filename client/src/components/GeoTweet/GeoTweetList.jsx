@@ -7,7 +7,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import Paper from '@material-ui/core/Paper';
-
 import Typography from '@material-ui/core/Typography';
 import FilledInput from '@material-ui/core/FilledInput';
 import InputAdornment from '@material-ui/core/InputAdornment';
@@ -124,7 +123,7 @@ export const GeoTweetList = forwardRef((props, ref) => {
         dispatch({ type: 'UPDATE_LIST', data: {
             lat: lat,
             lng: lng,
-                   weight: hashtag
+            weight: hashtag
                    
               },})
         

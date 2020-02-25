@@ -15,15 +15,15 @@ let initialState = {
   }
 
 function stateReducer(state, action) {
-
+        //reduce actions sent from the child components sharing state context
         switch (action.type) {
             case 'UPDATE_LOCATION':{
-                   ref.current.updateHookBack(action.data.hashtag,action.data.lat,action.data.lng);
+                ref.current.updateHookBack(action.data.hashtag,action.data.lat,action.data.lng);
                 return update(state, { lat: {$set: action.data.lat},lng: {$set: action.data.lng},hashtag: {$set: action.data.hashtag}, weight: {$set: action.data.hashtag}})
             } 
              case 'UPDATE_LIST':{                
                 return update(state, { lat: {$set: action.data.lat},lng: {$set: action.data.lng}, weight: {$set: action.data.weight}})
-                 }
+            }
             default:{
                 return initialState;
             }
@@ -33,11 +33,10 @@ function stateReducer(state, action) {
 
 export const GeoTweetScreen = () => {
  ref = useRef(null);
-
-  const [state, dispatch] = useReducer(stateReducer, initialState);
+ const [state, dispatch] = useReducer(stateReducer, initialState);
     
-
     return (
+        <React.StrictMode>
         <StateContext.Provider value={{ state, dispatch }}>
         <div style={{height: '100vh'}}>
          <div style={{position: 'absolute', left: '38%', top: 0, width: '62%', height: '100vh'}}>
@@ -49,6 +48,7 @@ export const GeoTweetScreen = () => {
             
     </div>
   </StateContext.Provider>
+        </React.StrictMode>
           
     );
   

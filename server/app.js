@@ -2,7 +2,7 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser')
-require('dotenv').config({ path: path.resolve(__dirname, './config/keys.env') });
+require('dotenv').config({ path: path.resolve(__dirname, './.env') });
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 

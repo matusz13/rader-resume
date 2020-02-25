@@ -12,7 +12,6 @@ useEffect( () => {
     let lft = (mrkerTxt.offsetLeft + mrkerTxt.offsetWidth/2) - 20;
     let lftStr = "-" + lft + "px";
     //mrkerTxt.style["left"] = lftStr;
-    console.log("useEffect lft: "+lftStr )
     setLeft(lftStr);
    
   }, []);

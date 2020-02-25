@@ -1,7 +1,7 @@
 import React, {  useState, useContext } from 'react';
 import GoogleMapReact from 'google-map-react';
 import { StateContext } from './GeoTweetScreen';
-
+import {MapStyle} from './MapStyle';
 import Marker from './Marker'
 
   
@@ -27,90 +27,11 @@ const mapRef=React.useRef();
 
  const handleApiLoaded = (map, maps) => {
   // use map and maps objects
-        map.setOptions({clickableIcons: false,
-                        styles: [
-            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
-            {
-              featureType: 'administrative.locality',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'poi',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'poi.park',
-              elementType: 'geometry',
-              stylers: [{color: '#263c3f'}]
-            },
-            {
-              featureType: 'poi.park',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#6b9a76'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'geometry',
-              stylers: [{color: '#38414e'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'geometry.stroke',
-              stylers: [{color: '#212a37'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#9ca5b3'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'geometry',
-              stylers: [{color: '#746855'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'geometry.stroke',
-              stylers: [{color: '#1f2835'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#f3d19c'}]
-            },
-            {
-              featureType: 'transit',
-              elementType: 'geometry',
-              stylers: [{color: '#2f3948'}]
-            },
-            {
-              featureType: 'transit.station',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'geometry',
-              stylers: [{color: '#17263c'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#515c6d'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'labels.text.stroke',
-              stylers: [{color: '#17263c'}]
-            }
-          ]
-    });
+        map.setOptions(MapStyle);
         mapRef.current = map;
         //console.log("markerRef length: " +markerRef.current.length)
+     
+    //for data flow purposes, I've debated moving this to a separate function to be called from the parent component once it's state updates that this is loaded. I went this route thinking it'd be more efficient, I was also already using the context to pass onclick events from the markers constructed below. 
     data.stores
     .forEach((store,index) => {
             if(store.defaultLoc){
@@ -133,26 +54,25 @@ const mapRef=React.useRef();
     return (
     
        <GoogleMapReact
-          bootstrapURLKeys={{key: process.env.REACT_APP_GMAP_API/* YOUR KEY HERE */ }}
+          bootstrapURLKeys={{key: process.env.REACT_APP_GMAP_API}}
           defaultCenter={defaultcoords.center}
           defaultZoom={defaultcoords.zoom}
-           
           yesIWantToUseGoogleMapApiInternals = {true}
-         onGoogleApiLoaded={({ map, maps }) => handleApiLoaded(map, maps)}
+          onGoogleApiLoaded={({ map, maps }) => handleApiLoaded(map, maps)}
         > 
-           { data.stores.map((store,index) => ( 
+        { data.stores.map((store,index) => ( 
         //console.log(store.defaultLoc)
                 
-      <Marker
+        <Marker
           parentID={"parentid" +index}
-           id={index}
-            id2={index + "two"}
-            lat={store.lat}
-            lng={store.lng}
-            text={"#" +store.hashtag}
-            onClick={() => {
-           
-              dispatch({ type: 'UPDATE_LOCATION', data: {
+          id={index}
+          id2={index + "two"}
+          lat={store.lat}
+          lng={store.lng}
+          text={"#" +store.hashtag}
+          onClick={() => {
+            //this is the real reason I'm using context for two way data flow. This dispatch is passed to the parent component reducer, then sent to the list component to update the twitter feed. 
+            dispatch({ type: 'UPDATE_LOCATION', data: {
                    lat: store.lat,
                    lng: store.lng,
                     hashtag:store.hashtag
@@ -162,7 +82,7 @@ const mapRef=React.useRef();
                 lat: store.lat,
                 lng: store.lng
             })
-            
+            //fancy markers woo
             data.stores.forEach((store,dex) => {
                  if(index !== dex){
                     document.getElementById(dex).hidden = false;
