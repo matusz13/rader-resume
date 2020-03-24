@@ -31,7 +31,7 @@ function stateReducer(state, action) {
         }
     }
 
-export const GeoTweetScreen = () => {
+export const GeoTweetInterface = () => {
  ref = useRef(null);
  const [state, dispatch] = useReducer(stateReducer, initialState);
     

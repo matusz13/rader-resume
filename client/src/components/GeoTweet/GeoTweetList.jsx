@@ -58,8 +58,7 @@ export const GeoTweetList = forwardRef((props, ref) => {
     
     const [data, setData] = useState({ tweets: [] });
     const classes = useStyles(); 
-
-  
+    
     const [searchTerm, setSearchTerm] = useState('');
     const debouncedSearchTerm = useDebounce(searchTerm, 500);
 
