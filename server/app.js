@@ -44,8 +44,8 @@ app.use('/',   express.static(path.join(client_path, './build')));
 app.use('/shortener',   express.static(path.join(client_path, './build')));
 app.use('/tweets',   express.static(path.join(client_path, './build')));
 app.use('/:short_id',   express.static(path.join(client_path, './build')));
-app.use('/geotweet',   express.static(path.join(client_path, './build')));
-
+app.use('/geotweets',   express.static(path.join(client_path, './build')));
+app.use('/addressbook',   express.static(path.join(client_path, './build')));
 
 
 //todo move to routes
