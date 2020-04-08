@@ -31,7 +31,7 @@ class MidScreen extends Component {
           <div className="summary-sm"><h9>{info.summary}</h9></div>)}
         {this.props.infoz.map(info =>
         <div className="blue-highlight devspace"><b>{info.devspace}</b></div>)}
-
+        <div className="devspace"><li><a href="/addressbook" >Address Book</a>{" "}(using react/redux ) </li></div>
         <div className="devspace"><li><a href="/shortener" >URL shortener</a>{" "}(uses nodejs, express, mongodb, reactjs) </li></div>
         <div className="devspace"><li><a href="/geotweets" >Google Twitter mashup</a>{" "}(reactjs Hooks api, Twitter and Google Maps api) </li></div>
         <div className="devspace"><li><a href="https://github.com/matusz13/rader-resume" >Github</a>{" "}(check out my code!) </li></div>

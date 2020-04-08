@@ -6,8 +6,9 @@ import { Route } from 'react-router';
  */
 import App from '../App';
 import Shortener from '../Shortener';
-import GeoTweetComponent from '../components/GeoTweet/GeoTweetComponent';
+import GeoTweetComponent from '../components/GeoTweet/GeoTweetInterface';
 import GeoTweet from '../GeoTweet';
+import ABApp from '../components/AddressBook/App';
 
 /**
  * All routes go here.
@@ -18,5 +19,7 @@ export default (
    
     <Route path="/shortener" component={Shortener} />
     <Route path="/geotweet" component={GeoTweet} />
+    <Route path='/addressbook' component={ABApp} />
+
   </Route>
 );

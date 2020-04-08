@@ -14,7 +14,7 @@ import FormControl from '@material-ui/core/FormControl';
 import clsx from 'clsx';
 import axios from 'axios';
 import useDebounce from '../utils/useDebounce';
-import { StateContext } from './GeoTweetScreen';
+import { StateContext } from './GeoTweetInterface';
 
 
 

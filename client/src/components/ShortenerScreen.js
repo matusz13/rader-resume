@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Modal from 'react-bootstrap/Modal';
+import Hexagons from './Hexagons'
 
 
 class ShortenerScreen extends Component {
@@ -56,20 +57,7 @@ class ShortenerScreen extends Component {
         <div className="App">
         <div className="App-header-ss">
         
-        <div id="hex1" className="hexagon-wrapper">
-                <div id="color1" className="hexagon"></div></div>
-        <div id="hex2" className="hexagon-wrapper">
-                <div id="color1" className="hexagon"></div></div>
-        <div id="hex3" className="hexagon-wrapper">
-                <div id="color1" className="hexagon"></div></div>
-        <div id="hex4" className="hexagon-wrapper">
-                <div id="color1" className="hexagon"></div></div>
-        <div id="hex5" className="hexagon-wrapper">
-                <div id="color1" className="hexagon"></div></div>
-        <div id="hex6" className="hexagon-wrapper">
-                <div id="color1" className="hexagon"></div></div>
-        <div id="hex7" className="hexagon-wrapper">
-                <div id="color1" className="hexagon"></div></div>
+        <Hexagons/>
         
         <div className="urlForm">
         <div className="screentitle shortenertitle"><h5>{pgTitle}</h5></div>

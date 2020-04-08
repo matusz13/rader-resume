@@ -5,14 +5,28 @@
   background-color: #242424;
   padding-bottom: 300px;
   max-width: 917px;
-  
+  height: 100%;
   justify-content: center;
   margin-left:auto;
   margin-right:auto;
   width:917px;
   overflow-y: 'scroll';
-    
+}
+.App-AddressBk{
+  text-align: center;
+  background-color: #242424;
+  padding-bottom: 300px;
+  max-width: 917px;
 
+  justify-content: center;
+  margin-left:auto;
+  margin-right:auto;
+  width:917px;
+  overflow-y: 'scroll';
+  height: 40em;
+}
+:root{
+  background-color: #141414;
 }
 
 .App-sm {
@@ -26,8 +40,6 @@
   margin-right:auto;
   width:400px;
   overflow-y: 'scroll';
-    
-
 }
 
 .App-mid{
@@ -65,11 +77,11 @@
 }
 
 .App-header {
-  height: 1000px;
+  height: 1100px;
   padding: 20px;
   padding-bottom: 60px;
   font-size:small;
-  color: #898989;
+  color: #898989 !important;
   text-align: left;
 }
 .App-header-ss {
@@ -77,7 +89,7 @@
   padding: 20px;
   padding-bottom: 60px;
   font-size:small;
-  color: #898989;
+  color: #898989 !important;
   text-align: left;
 }
 
@@ -86,7 +98,7 @@
   padding: 20px;
   padding-bottom: 60px;
   font-size:small;
-  color: #898989;
+  color: #898989 !important;
   text-align: left;
 }
 
@@ -100,29 +112,29 @@
 }
 .name{
     position:relative;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Inconsolata', monospace !important;
     top:-10px;
     
 }
 .name-mid{
     position:relative;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Inconsolata', monospace !important;
     top:-10px;
     left:10px;
     
 }
 .summary{
-    color: #df966c;
+    color: #df966c !important;
     position:relative;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Inconsolata', monospace !important;
     top:-10px;
     
 }
 
 .summary-sm{
-    color: #df966c;
+    color: #df966c !important;
     position:relative;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Inconsolata', monospace !important;
     top:-70px;
     left: 180px;
     width:380px;
@@ -185,7 +197,7 @@
 .Skills{
     float: left;
     width: 30%;
-    background-color: ;
+    
     
     
 }
@@ -448,12 +460,5 @@ li {
 
 #color1 {
   background-color: #141414; 
-    
-}
-
-html, body{
-  
-    background-color: #141414;
-  
     
 }

@@ -1,6 +1,6 @@
 import React, {  useState, useContext } from 'react';
 import GoogleMapReact from 'google-map-react';
-import { StateContext } from './GeoTweetScreen';
+import { StateContext } from './GeoTweetInterface';
 import {MapStyle} from './MapStyle';
 import Marker from './Marker'
 
