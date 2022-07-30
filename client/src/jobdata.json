@@ -1,9 +1,24 @@
 {
     "jobs":[    {
-                "job_name":"<Professional Sabbatical>" , 
+                "job_name":"< Cerner >" , 
+                "job_title":"Interface Engineer II (Systems Engineer - Fully Remote)",
+                "start_date":"2021",
+                "end_date":"current",
+                "responsibilities": [{
+                    "1":"Responsible for analysis, design, development, testing, implementation, and maintenance of projects on federal contract for the Veterans Administration and Department of Defense.",
+                    "2":"Remotely contribute to team efforts via Microsoft Teams, Slack and other virtual networking applications.",
+                    "3":"Routinely in charge of training, mentoring and code review of junior and new team members.",
+                    "4":"Provider of good natured humor - lifter of team morale when projects get tough."
+                }]
+       
+
+
+},
+{
+                "job_name":"< Professional Sabbatical >" , 
                 "job_title":"Self Employed",
                 "start_date":"2018",
-                "end_date":"current",
+                "end_date":"2021",
                 "responsibilities": [{
                     "1":"Took time away from the office setting to travel and provide caregiving to an ailing family member.",
                     "2":"Attained FAA Part 107 drone operator licensing.",
@@ -15,7 +30,7 @@
     
     },
             {
-                "job_name":"<Cinema Scene Marketing>" , 
+                "job_name":"< Cinema Scene Marketing >" , 
                 "job_title":"Senior Software Engineer",
                 "start_date":"2016",
                 "end_date":"2018",
@@ -29,7 +44,7 @@
     
     },
             {
-                "job_name":"<The Walt Disney Company>" , 
+                "job_name":"< The Walt Disney Company >" , 
                 "job_title":"Senior Software Engineer",
                 "start_date":"2011",
                 "end_date":"2015",
@@ -44,7 +59,7 @@
     
     },
             {
-                "job_name":"<Cisco Systems>" , 
+                "job_name":"< Cisco Systems >" , 
                 "job_title":"Customer Facing Engineer",
                 "start_date":"2009",
                 "end_date":"2011",
@@ -59,7 +74,7 @@
     
     },
             {
-                "job_name":"<VML inc>" , 
+                "job_name":"< VML inc >" , 
                 "job_title":"Web Developer",
                 "start_date":"2006",
                 "end_date":"2008",
@@ -75,7 +90,7 @@
            ],
     "skills":[
         {
-                "skill_title":"<Langs + Libs>", 
+                "skill_title":"< Langs + Libs >", 
                 "skill_list": [{
                     "1":"Javascript ES5-ES10, ReactJS, Redux, Lua, CoffeeScript.",
                     "2":"Node.js NPM, Express, Mongoose, Webpack.",
@@ -87,7 +102,7 @@
     
     },
          {
-                "skill_title":"<Design Practices>", 
+                "skill_title":"< Design Practices >", 
                 "skill_list": [{
                     "1":"Responsive web development, debugging, unit testing, prototyping, data integrations and visualizations",
                     "2":"RESTful Services, DOM operations, Socket communications"
@@ -97,7 +112,7 @@
     
     },
          {
-                "skill_title":"<Software>", 
+                "skill_title":"< Software >", 
                 "skill_list": [{
                     "1":"Intellij IDEA, WebStorm, PyCharm, Eclipse based IDE",
                     "2":"Atlassian Products (Jira, Confluence, Bitbucket, etc.), Slack",
@@ -116,10 +131,10 @@
                 "phone":"816-716-7410",
                 "location":"Kansas City",
                 "email":"matusz13@gmail.com",
-                "summary":"Nine years design and development experience, continual learning.",
+                "summary":"Ten years design and development experience, continual learning.",
                 "skills":"Skills",
                 "experience":"Experience",
-                "devspace":"<Dev Space>"
+                "devspace":"< Dev Space >"
 
     
     
