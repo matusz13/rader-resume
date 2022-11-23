@@ -20,7 +20,7 @@
     "morgan": "~1.9.1",
     "nanoid": "^2.1.9",
     "nodemon": "^2.0.2",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.5.0",
     "twitter": "^1.7.1",
     "validation": "0.0.1"
   },
